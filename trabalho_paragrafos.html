@@ -1,0 +1,40 @@
+<!-- Por Emmanuel Felipe Silva Santos -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Website Título</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap');
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            color: #ff0000;
+            font-size: 24px;
+        }
+        p {
+            font-family: 'Roboto', serif;
+            color: #0004ff;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cabeçalho do Website 100% online</h1>
+    <p id="primeiro_paragrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus ultricies tristique nulla aliquet. Sed felis eget velit aliquet sagittis. Condimentum mattis pellentesque id nibh. Ut tortor pretium viverra suspendisse potenti. Faucibus scelerisque eleifend donec pretium vulputate sapien. Lobortis feugiat vivamus at augue eget arcu dictum varius duis. Cursus mattis molestie a iaculis at. Quis enim lobortis scelerisque fermentum dui. Tincidunt dui ut ornare lectus. Id cursus metus aliquam eleifend mi. Id venenatis a condimentum vitae sapien pellentesque habitant morbi. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Magna ac placerat vestibulum lectus mauris ultrices eros in. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Arcu vitae elementum curabitur vitae. Consequat id porta nibh venenatis cras sed felis eget.</p>
+    <p id="segundo_paragrafo">Segundo parágrafo default NULL</p>
+    <p id="terceiro_paragrafo">Terceiro parágrafo default NULL</p>
+
+    <script>
+        function alterarParagrafos() {
+            var novoTextoSegundoParagrafo = prompt("Digite o novo conteúdo para o segundo parágrafo:");
+            var novoTextoTerceiroParagrafo = prompt("Digite o novo conteúdo para o terceiro parágrafo:");
+
+            document.getElementById("segundo_paragrafo").innerHTML = novoTextoSegundoParagrafo;
+            document.getElementById("terceiro_paragrafo").innerHTML = novoTextoTerceiroParagrafo;
+        }
+
+        alterarParagrafos();
+    </script>
+</body>
+</html>
