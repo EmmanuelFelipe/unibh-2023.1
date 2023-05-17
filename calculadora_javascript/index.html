@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trabalho Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="display" class="display">0</div>
+        <input type="text" id="entrada" class="entrada"/>
+        <div class="buttons">
+            <button onclick="addOperador('+')"class="btn" >+</button>
+            <button onclick="addOperador('-')"class="btn" >-</button>
+            <button onclick="addOperador('*')"class="btn" >*</button>
+            <button onclick="addOperador('/')"class="btn" >/</button>
+            <button onclick="calcular()" class="btn">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
